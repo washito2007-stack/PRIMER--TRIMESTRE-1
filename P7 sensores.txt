@@ -12,7 +12,7 @@ wlan = network.WLAN(network.STA_IF)
 wlan.active(False)
 time.sleep(0.1)
 wlan.active(True)
-wlan.connect("josue", "merchan2")
+wlan.connect("israel", "ISRAEL2")
 
 print("Conectando como sensor1...")
 while not wlan.isconnected():
