@@ -1,0 +1,22 @@
+import network
+
+def do_connect(ssid, password):
+    sta_if = network.WLAN(network.STA_IF)
+
+    if not sta_if.isconnected():
+        print('Conectando a la red', ssid + '...')
+        sta_if.active(True)
+        
+        sta_if.config(dhcp_hostname="Jonna")
+
+        sta_if.connect(ssid, password)
+
+        while not sta_if.isconnected():
+            pass
+
+    print(' Conectado a la red:', ssid)
+    print(' Configuración de red (IP/netmask/gw/DNS):', sta_if.ifconfig())
+    print(' Hostname actual:', sta_if.config('dhcp_hostname'))
+
+
+do_connect('Jonnathan', 'Kamara38')
