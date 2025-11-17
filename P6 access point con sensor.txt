@@ -4,8 +4,8 @@ import network
 import time
 
 # Nombre de la red y contraseña para el Access Point
-SSID = "Jonnathan"
-PASSWORD = "Kamara38"
+SSID = "LJ_IM"
+PASSWORD = "0303146815"
 
 # Configuración del punto de acceso
 ap = network.WLAN(network.AP_IF)
