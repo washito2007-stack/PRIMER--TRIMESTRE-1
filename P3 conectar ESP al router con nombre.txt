@@ -7,7 +7,7 @@ def do_connect(ssid, password):
         print('Conectando a la red', ssid + '...')
         sta_if.active(True)
         
-        sta_if.config(dhcp_hostname="Jonna")
+        sta_if.config(dhcp_hostname="LJ_IM")
 
         sta_if.connect(ssid, password)
 
